@@ -325,12 +325,6 @@ AddSubClass("dancer", "paragon", {
 		}
 	}
 });
-// AddSubClass("dancer", "peace bringer", {
-	
-// });
-// AddSubClass("", "", {
-	
-// });
 
 //Black Mage by u/SaintApathy (must check if it's up to date)
 [   // cantrips
