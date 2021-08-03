@@ -9,7 +9,7 @@ To Do List:
     * Hrothhgar: creation
     * Hyur: creation
     * ~~Lalafell~~ (provided by [u/SaintApathy](https://www.reddit.com/user/SaintApathy/posts/ "Reddit user") on reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/b2l709/shadowbringers_content_import_scripts_for_rmpmb_s/ "Reddit post")): ~~**COMPLETED**~~
-    * Miqo'te  (provided by [u/SaintApathy](https://www.reddit.com/user/SaintApathy/posts/ "Reddit user") on reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/b2l709/shadowbringers_content_import_scripts_for_rmpmb_s/ "Reddit post")): check if it's up to date and correct
+    * ~~Miqo'te~~  (provided by [u/SaintApathy](https://www.reddit.com/user/SaintApathy/posts/ "Reddit user") on reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/b2l709/shadowbringers_content_import_scripts_for_rmpmb_s/ "Reddit post")): ~~**COMPLETED**~~
     * Roegadyn: creation
     * Viera: creation
 2. CLASSES:
