@@ -14,22 +14,22 @@ To Do List:
     * Viera: creation
 2. CLASSES:
     * Multiclassing: each class multiclass properties will be added after finishing other classes
-    * Arcanist:
-    * Astrologian:
-    * Bard Archetype: College of the Skysinger:
+    * Arcanist: creation
+    * Astrologian: creation
+    * Bard Archetype: College of the Skysinger: creation
     * Black Mage (provided by [u/SaintApathy](https://www.reddit.com/user/SaintApathy/posts/ "Reddit user") on reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/b2l709/shadowbringers_content_import_scripts_for_rmpmb_s/ "Reddit post")): check if it's up to date and correct
-    * Dancer:
-    * Dark Knight:
-    * Dragoon:
-    * Gunbreaker:
+    * Dancer: spells and validation
+    * Dark Knight: creation
+    * Dragoon: creation
+    * Gunbreaker: creation
     * Machinist (provided by [u/SaintApathy](https://www.reddit.com/user/SaintApathy/posts/ "Reddit user") on reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/b2l709/shadowbringers_content_import_scripts_for_rmpmb_s/ "Reddit post")): check if it's up to date and correct
-    * Monk Archetype: Way of Rhalgr:
-    * Paladin Archetype: Oath of the Sultansworn:
+    * Monk Archetype: Way of Rhalgr: creation
+    * Paladin Archetype: Oath of the Sultansworn: creation
     * Red Mage (provided by [u/SaintApathy](https://www.reddit.com/user/SaintApathy/posts/ "Reddit user") on reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/b2l709/shadowbringers_content_import_scripts_for_rmpmb_s/ "Reddit post")): check if it's up to date and correct
-    * Roge Archetype: Ninja:
-    * Samurai:
-    * Warrior:
-    * White Mage:
+    * Roge Archetype: Ninja: creation
+    * Samurai: creation
+    * Warrior: creation
+    * White Mage: creation
 3. SPELLS &amp; ITEMS:
     * Spells: all except "Assize"
     * Items: all
