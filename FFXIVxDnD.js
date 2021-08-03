@@ -14,12 +14,12 @@ SourceList["FFXIVxDnD"] = {
 */
 
 //Au ra
-RaceList["au ra"] = {
-	regExpSearch : /^(?=.*au)(?=.*ra).*$/i,
-	name: "Au ra",
-	sortname: "Au ra",
+RaceList["xaela au ra"] = {
+	regExpSearch : /^(?=.*xaela)(?=.*au)(?=.*ra).*$/i,
+	name: "Xaela Au ra",
+	sortname: "Au ra, Xaela",
 	source: ["FFXIVxDnD", 5],
-	plural: "Au ri",
+	plural: "Xaela Au ri",
 	size: 3,
 	speed: {
 		walk: {spd: 30, enc: 20}
@@ -30,9 +30,10 @@ RaceList["au ra"] = {
 	weight: "",
 	heightMetric: " males range anywhere from 6 and a half to 7 feet tall with a lean build dwarfing the females who rarely grow taller than 5 feet",
 	weightMetric: "",
-	improvements: "",
-	scores: [0, 0, 0, 0, 0, 2], //[Str, Dex, Con, Int, Wis, Cha]
-	trait: "",
+	improvements: "Xaela Au ra: +2 Wisdom, +1 Strength",
+	scores: [1, 0, 0, 0, 2, 0], //[Str, Dex, Con, Int, Wis, Cha]
+	trait: "Xaela Au ra (+2 Wisdom, +1 Strength)\nCranial Horns: you gain proficiency in the perception skill\nScaled Bodies: when unarmored, your AC is equal to 11 + your dexterity modifier\nNomadic Instincts: you gain proficiency in the survival skill\nSavage Attacks: when you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+	skills: ["Survival", "Perception"],
 	features: {
 		"scaled bodies": {
 			name: "Scaled Bodies",
@@ -49,20 +50,6 @@ RaceList["au ra"] = {
 		}
 	}
 };
-AddRacialVariant(
-	"au ra",
-	"xaela au ra",
-	{
-		regExpSearch : /^(?=.*xaela)(?=.*au)(?=.*ra).*$/i,
-		name: "Xaela Au ra",
-		source: ["FFXIVxDnD", 5],
-		plural: "Xaela Au ri",
-		improvements: "Xaela Au ra: +2 Wisdom, +1 Strength",
-		scores: [1, 0, 0, 0, 2, 0],
-		skills: ["Survival", "Perception"],
-		trait: "Xaela Au ra (+2 Wisdom, +1 Strength)\nCranial Horns: you gain proficiency in the perception skill\nScaled Bodies: when unarmored, your AC is equal to 11 + your dexterity modifier\nNomadic Instincts: you gain proficiency in the survival skill\nSavage Attacks: when you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
-	}
-);
 AddRacialVariant(
 	"au ra",
 	"raen au ra",
