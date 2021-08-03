@@ -1,10 +1,11 @@
 var iFileName = "Final Fantasy XIV D&D Compendium.js";
+//This file adds the homebrew races, classes, spells and items created by u/SilentSoren for the FFXIVxDnD project.
 
 SourceList["FFXIVxDnD"] = {
 	name: "Final Fantasy XIV D&D Compendium",
 	abbreviation: "FFXIVxDnD",
 	group: "Homebrew",
-	url: "",
+	url: "https://www.reddit.com/r/FFXIVxDnD/comments/aoxa5v/current_build_and_previous_versions/",
 	date: ""
 };
 
@@ -324,41 +325,32 @@ AddSubClass("dancer", "paragon", {
 		}
 	}
 });
-AddSubClass("dancer", "peace bringer", {
+// AddSubClass("dancer", "peace bringer", {
 	
-});
-AddSubClass("", "", {
+// });
+// AddSubClass("", "", {
 	
-});
+// });
 
 //Black Mage by u/SaintApathy (must check if it's up to date)
 [   // cantrips
     "blade ward", "chill touch", "fire bolt", "frostbite", "infestation", "mage hand", "magic stone", "produce flame", "ray of frost", "shocking grasp", "thaumaturgy", "toll the dead",
-    
     //level 1
     "absorb elements", "burning hands", "chaos bolt", "detect magic", "disguise self", "expeditious retreat", "false life", "feather fall", "find familiar", "hex", "ice knife", "illusory script inflict wounds", "jump", "longstrider", "mage armor", "magic missile", "shield", "sleep", "witch bolt",
-    
     // level 2
     "alter self", "arcane lock", "blur", "blindness/deafness", "cloud of daggers", "darkness", "darkvision", "dragon's breath", "flaming sphere", "heat metal", "hold person", "knock", "levitate", "magic weapon", "misty step", "pyrotechnics", "scorching ray", "scorching ray", "silence", "web",
-    
     // level 3
     "animate dead", "bestow curse", "blink", "counterspell", "dispel magic", "elemental weapon", "feign death", "fly", "leomud's tiny hut", "sleet storm", "slow", "speak with dead", "stinking cloud", "tongues", "thunderstep", "vampiric touch",
-    
     // level 4
     "arcane eye", "banishment", "blight", "dimension door", "fire shield", "ice storm", "mordenkainen's faithful hound", "mordenkainen's private sanctum", "polymorph", "wall of fire",
-    
     // level 5
     "animate objects", "antilife shell", "bigby's hand", "cloudkill", "contact other plane", "contagion", "danse macabre", "destructive wave", "dream", "far step", "flame strike", "geas", "hold monster", "mislead", "telekinesis", "teleportation circle", "wall of force",
-    
     // level 6
     "arcane gate", "chain lightning", "circle of death", "create undead", "disintegrate", "eyebite", "harm", "investiture of flame", "investiture of ice", "mass suggestion", "otiluke's freezing sphere", "soul cage", "wall of ice",
-    
     // level 7
     "delayed blast fireball", "etherealness", "finger of death", "fire storm", "forcecage", "mordenkainen's magnificent mansion", "plane shift", "power word pain", "regenerate", "simulacrum", "teleport",
-    
     // level 8
     "abi-dalzim's horrid wilting", "antimagic field", "demiplane", "dominate monster", "incendiary cloud", "maddening darkness",
-    
     // level 9
     "flare", "gate", "meteor swarm", "time stop"
 ].forEach( function (s) {
