@@ -1,7 +1,7 @@
 # Final-Fantasy-XIV-DnD-Compendium
 Final Fantasy XIV D&amp;D Compendium script for MPMB's character sheet.
 
-To Do List:\n
+To Do List:
 1. RACES:
     * Au ra: corrections and finishing
     * Ellezen: creation
