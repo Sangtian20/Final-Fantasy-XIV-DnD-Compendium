@@ -82,12 +82,12 @@ AddRacialVariant(
 
 //Elezen
 
-//Lalafell by u/SaintApathy (must check if it's complete)
+//Lalafell by u/SaintApathy
 RaceList["lalafell plainsfolk"] = { 
     regExpSearch : /^(?=.*lalafell)(?=.*plainsfolk).*$/i,
     name : "Lalafell, Plainsfolk",
     sortname : "Lalafell, Plainsfolk",
-    source : ["FFXIVxDnD", 13],
+    source : ["FFXIVxDnD", 17],
     plural : "Plainsfolk Lalafell",
     size : 4,
     speed : {
@@ -99,13 +99,16 @@ RaceList["lalafell plainsfolk"] = {
     weight : " weigh around 60 lb (45 + 1d6 \xD7 1d4 lb)",
     improvements : "Lalafell, Plainsfolk: +1 Dexterity, +2 Charisma",
     scores : [0, 1, 0, 0, 0, 2],
-    trait : "Lalafell, Plainsfolk (+1 Dexterity, +2 Charisma)\n\nCunning: I have adv. on all Int, Wis, and Cha saving throws against magic.\n\nLalafellin Nimbleness: I can move through larger creatures' spaces.\n\nNaturally Stealthy: I can hide behind larger creatures."
+    trait : "Lalafell, Plainsfolk (+1 Dexterity, +2 Charisma)\n\nCunning: I have adv. on all Int, Wis, and Cha saving throws against magic.\n\nLalafellin Nimbleness: I can move through larger creatures' spaces.\n\nNaturally Stealthy: I can hide behind larger creatures.",
+	savetxt: {
+		adv_vs: ["intelligence, wisdom and charisma magic"]
+	}
 };
 RaceList["lalafell dunesfolk"] = { 
     regExpSearch : /^(?=.*lalafell)(?=.*dunesfolk).*$/i,
     name : "Lalafell, Dunesfolk",
     sortname : "Lalafell, Dunesfolk",
-    source : ["FFXIVxDnD", 13],
+    source : ["FFXIVxDnD", 17],
     plural : "Dunesfolk Lalafell",
     size : 4,
     speed : {
@@ -118,15 +121,18 @@ RaceList["lalafell dunesfolk"] = {
     weight : " weigh around 60 lb (45 + 1d6 \xD7 1d4 lb)",
     improvements : "Lalafell, Dunesfolk: +1 Intelligence, +2 Charisma",
     scores : [0, 0, 0, 1, 0, 2],
-    trait : "Lalafell, Dunesfolk (+1 Intelligence, +2 Charisma)\n\nCunning: I have adv. on all Int, Wis, and Cha saving throws against magic.\n\nLalafellin Nimbleness: I can move through larger creatures' spaces.\n\nDustshield: I have adv. on saving throws against being blinded.\n\nLand of Merchants: I gain proficiency in the Deception skill."
+    trait : "Lalafell, Dunesfolk (+1 Intelligence, +2 Charisma)\n\nCunning: I have adv. on all Int, Wis, and Cha saving throws against magic.\n\nLalafellin Nimbleness: I can move through larger creatures' spaces.\n\nDustshield: I have adv. on saving throws against being blinded.\n\nLand of Merchants: I gain proficiency in the Deception skill.",
+	savetxt: {
+		adv_vs: ["being blinded"]
+	}
 };
 
-//Miqo'te by u/SaintApathy (must check if it's complete)
+//Miqo'te by u/SaintApathy
 RaceList["miqote seeker of the sun"] = { 
     regExpSearch : /^(?=.*miqo\'te)(?=.*seeker)(?=.*sun).*$/i,
     name : "Miqo\'te (Seeker of the Sun)",
     sortname : "Miqo\'te, Seeker of the Sun",
-    source : ["FFXIVxDnD", 15],
+    source : ["FFXIVxDnD", 19],
     plural : "Sun Seekers",
     size : 3,
     speed : {
@@ -141,28 +147,19 @@ RaceList["miqote seeker of the sun"] = {
     improvements : "Miqo\'te (Seeker of the Sun): +2 Dexterity, +1 Charisma",
     scores : [0, 2, 0, 0, 0, 1],
     trait : "Miqo\'te (Seeker of the Sun) (+2 Dexterity, +1 Charisma)\n\nSkills: I gain proficiency in Perception and Athletics.\n\nTenacity: When reduced to 0 hit points but not killed, I drop to 1 instead. Recharges on long rest.",
-    features : {
-        "tenacity" : {
-            name : "Tenacity",
-            minlevel : 1,
-            usages : 1,
-            recovery : "long rest",
-            tooltip : " (Tenacity)"
-        }
-    }
 };
 RaceList["miqote keeper of the moon"] = {
     regExpSearch : /^(?=.*miqo\'te)(?=.*keeper)(?=.*moon).*$/i,
     name : "Miqo\'te (Keeper of the Moon)",
     sortname : "Miqo\'te, Keeper of the Moon",
-    source : ["SBFFXIV", 15],
+    source : ["SBFFXIV", 20],
     plural : "Moon Seekers",
     size : 3,
     speed : {
         walk : { spd : 35, enc : 25 }
     },
     languageProfs : ["Common", 1],
-    vision : ["Darkvision", 60],
+    vision : ["Darkvision", 120],
     skills : ["Perception"],
     age : " reach adulthood in their late teens and live around 80 years",
     height : " range from 5 feet to 5 1/2 feet tall (5'0\" + 1d8\")",
@@ -334,7 +331,7 @@ AddSubClass("", "", {
 	
 });
 
-//Black Mage by u/SaintApathy (must check if it's complete)
+//Black Mage by u/SaintApathy (must check if it's up to date)
 [   // cantrips
     "blade ward", "chill touch", "fire bolt", "frostbite", "infestation", "mage hand", "magic stone", "produce flame", "ray of frost", "shocking grasp", "thaumaturgy", "toll the dead",
     
@@ -614,7 +611,7 @@ ClassSubList["black mage-void soul"] = {
     }
 };
 
-//Machinist by u/SaintApathy (must check if it's complete)
+//Machinist by u/SaintApathy (must check if it's up to date)
 ClassList["machinist"] = {
     regExpSearch : /^(?=.*machinist).*$/i,
     name : "Machinist",
@@ -978,7 +975,7 @@ ClassSubList["machinist-grenadier"] = {
     }
 };
 
-//Red Mage by u/SaintApathy (must check if it's complete)
+//Red Mage by u/SaintApathy (must check if it's up to date)
 [   // cantrips
     "blade ward", "booming blade", "dancing lights", "fire bolt", "green-flame blade", "gust", "lightning lure", "mage hand", "magic stone", "mold earth", "prestidigitation", "ray of frost", "shocking grasp", "sword burst", "thunderclap", "true strike", "word of radiance",
  
