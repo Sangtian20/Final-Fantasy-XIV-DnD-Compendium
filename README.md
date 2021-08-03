@@ -1,5 +1,5 @@
 # Final-Fantasy-XIV-DnD-Compendium
-Final Fantasy XIV D&amp;D Compendium script for MPMB's character sheet.
+Final Fantasy XIV D&amp;D Compendium script for MPMB's character sheet. The manual was made by [u/SilentSoren](https://www.reddit.com/user/SilentSoren/ "Reddit user"). Current version being used: 2/2/2021. All versions of the manual can be found on this reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/aoxa5v/current_build_and_previous_versions/?sort=new "Reddit post")
 
 To Do List:
 1. RACES:
