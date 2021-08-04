@@ -3,8 +3,8 @@ Final Fantasy XIV D&amp;D Compendium script for MPMB's character sheet. The manu
 
 To Do List:
 1. RACES:
-    * Au ra: corrections and finishing
-    * Ellezen: creation
+    * ~~Au ra: COMPLETED~~
+    * ~~Ellezen: COMPLETED~~
     * Garlean: creation
     * Hrothhgar: creation
     * Hyur: creation
