@@ -6,7 +6,7 @@ SourceList["FFXIVxDnD"] = {
 	abbreviation: "FFXIVxDnD",
 	group: "Homebrew",
 	url: "https://www.reddit.com/r/FFXIVxDnD/comments/aoxa5v/current_build_and_previous_versions/",
-	date: ""
+	date: "2/2/2021"
 };
 
 /*
@@ -28,11 +28,9 @@ RaceList["xaela au ra"] = {
 	age: " reach adulthood around the age of 16 and live around 80 years",
 	height: " males range anywhere from 6 and a half to 7 feet tall with a lean build dwarfing the females who rarely grow taller than 5 feet",
 	weight: "",
-	heightMetric: " males range anywhere from 6 and a half to 7 feet tall with a lean build dwarfing the females who rarely grow taller than 5 feet",
-	weightMetric: "",
 	improvements: "Xaela Au ra: +2 Wisdom, +1 Strength",
 	scores: [1, 0, 0, 0, 2, 0], //[Str, Dex, Con, Int, Wis, Cha]
-	trait: "Xaela Au ra (+2 Wisdom, +1 Strength)\nCranial Horns: you gain proficiency in the perception skill\nScaled Bodies: when unarmored, your AC is equal to 11 + your dexterity modifier\nNomadic Instincts: you gain proficiency in the survival skill\nSavage Attacks: when you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+	trait: "Xaela Au ra (+2 Wisdom, +1 Strength)\nCranial Horns: you gain proficiency in the perception skill\nScaled Bodies: when unarmored, your AC is equal to 11 + your dexterity modifier\nNomadic Instincts: you gain proficiency in the survival skill\nSavage Attacks: when you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.",
 	skills: ["Survival", "Perception"],
 	features: {
 		"scaled bodies": {
@@ -50,25 +48,92 @@ RaceList["xaela au ra"] = {
 		}
 	}
 };
-AddRacialVariant(
-	"au ra",
-	"raen au ra",
-	{
-		regExpSearch : /^(?=.*raen)(?=.*au)(?=.*ra).*$/i,
-		name: "Raen Au ra",
-		source: ["FFXIVxDnD", 5],
-		plural: "Raen Au ri",
-		improvements: "Raen Au ra: +2 Wisdom, +1 Charisma",
-		scores: [0, 0, 0, 0, 2, 1],
-		skills: ["Persuasion", "Perception"],
-		savetxt: {
-			adv_vs: ["charmed"]
-		},
-		trait: "Raen Au ra (+2 Wisdom, +1 Strength)\nCranial Horns: you gain proficiency in the perception skill\nScaled Bodies: when unarmored, your AC is equal to 11 + your dexterity modifier\nPolite society: you gain proficiency in the persuasion skill\nUnwavering loyalty: you have advantage on saves against being charmed."
+RaceList["raen au ra"] = {
+    source: ["FFXIVxDnD", 8],
+	regExpSearch : /^(?=.*raen)(?=.*au)(?=.*ra).*$/i,
+	name: "Raen Au ra",
+	sortname: "Au ra, Raen",
+	source: ["FFXIVxDnD", 5],
+	plural: "Raen Au ri",
+	size: 3,
+	speed: {
+		walk: {spd: 30, enc: 20}
+	},
+	languageProfs: ["Common", "Auri"],
+	age: " reach adulthood around the age of 16 and live around 80 years",
+	height: " males range anywhere from 6 and a half to 7 feet tall with a lean build dwarfing the females who rarely grow taller than 5 feet",
+	weight: "",
+	improvements: "Raen Au ra: +2 Wisdom, +1 Charisma",
+	scores: [0, 0, 0, 0, 2, 1], //[Str, Dex, Con, Int, Wis, Cha]
+	trait: "Raen Au ra (+2 Wisdom, +1 Charisma)\nCranial Horns: you gain proficiency in the perception skill\nScaled Bodies: when unarmored, your AC is equal to 11 + your dexterity modifier\nPolite Society: you gain proficiency in the persuasion skill\nUnwavering Loyalty: you have advantage on saves against being charmed",
+	skills: ["Persuasion", "Perception"],
+	features: {
+		"scaled bodies": {
+			name: "Scaled Bodies",
+			minLevel: 1,
+			description: "\n " + "Withouth armor, my AC is 11 + Dexterity modifier",
+			armorOptions: [{
+				regExpSearch: /justToAddToDropDown/,
+				name: "Unarmored Defense (Dex)",
+				source: ["HB", 5],
+				ac: "11+Dex",
+				affectsWildShape: true
+			}],
+			armorAdd: "Unarmored Defense (Dex)"
+		}
+	},
+    savetxt: {
+		adv_vs: ["charmed"]
 	}
-);
+};
 
 //Elezen
+RaceList["wildwood elezen"] = {
+    source: ["FFXIVxDnD", 8],
+	regExpSearch: /^(?=.*wildwood)(?=.*elezen).*$/i,
+    name: "Wildwood Elezen",
+    sortname: "Elezen, Wildwood",
+    plural: "Wildwood Elezen",
+    age: " reach adulthood around the age of 18 and live into their nineties",
+    size: 3,
+    height: " males range between 6 ft 3 in and 6 ft 8 in and females between 6 ft and 6 ft 6 in",
+    weight: "",
+    speed: {
+        walk: {spd: 30, enc: 20}
+    },
+    languageProfs: [1, "Common"],
+    improvements: "Wildwood Elezen: +2 Intelligence, +1 Dexterity",
+    scores: [0, 1, 0, 2, 0, 0], //[Str, Dex, Con, Int, Wis, Cha]
+    trait: "Wildwood Elezen (+2 Intelligence, +1 Dexterity\nSuperb Hearing: you gain advantage when making a perception check using your hearing\nHawk Sight: the normal range of your ranged weapon is increased by 20 ft. This cannot exceed the maz range of the weapon.\nNatural Shrewdness: you gain proficiency in the insight skill.",
+    skills: ["Insight"],
+};
+RaceList["duskwight elezen"] = {
+	regExpSearch: /^(?=.*duskwight)(?=.*elezen).*$/i,
+    name: "Duskwight Elezen",
+    sortname: "Elezen, Duskwight",
+    plural: "Duskwight Elezen",
+    age: " reach adulthood around the age of 18 and live into their nineties",
+    size: 3,
+    height: " males range between 6 ft 3 in and 6 ft 8 in and females between 6 ft and 6 ft 6 in",
+    weight: "",
+    speed: {
+        walk: {spd: 30, enc: 20}
+    },
+    languageProfs: [1, "Common"],
+    improvements: "Duskwight Elezen: +2 Intelligence, +1 Constitution",
+    scores: [0, 0, 1, 2, 0, 0], //[Str, Dex, Con, Int, Wis, Cha]
+    trait: "Duskwight Elezen (+2 Intelligence, +1 Constitution)\nSuperb Hearing: you gain advantage when making a perception check using your hearing\nCave Dweller: you gain advantage when making stealth checks in caves or dim and dark lightning conditions",
+    vision: [["Darkvision"], 60]
+};
+
+//Garlean
+
+
+//Hrothgar
+
+
+//Hyur
+
 
 //Lalafell by u/SaintApathy
 RaceList["lalafell plainsfolk"] = { 
@@ -165,6 +230,12 @@ RaceList["miqote keeper of the moon"] = {
         }
     }
 };
+
+//Roegadyn
+
+
+//Viera
+
 
 /*
 ==================	CHAPTER 2: CLASSES  ==================
@@ -276,7 +347,7 @@ ClassList["dancer"] = {
 			description: desc(["When you roll initiative you gain 2 Dazzling Dance charges."])
 		}
 	}
-}
+};/*
 AddSubClass("dancer", "paragon", {
 	regExpSearch: /^(?=.*paragon).*$/i,
 	subname: "Paragon",
@@ -311,7 +382,8 @@ AddSubClass("dancer", "paragon", {
 			action: ["action", ""]
 		}
 	}
-});
+}
+);*/
 
 //Black Mage by u/SaintApathy (must check if it's up to date)
 [   // cantrips
