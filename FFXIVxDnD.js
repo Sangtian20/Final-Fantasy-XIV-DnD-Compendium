@@ -1363,8 +1363,7 @@ ClassSubList["red mage-battle rose"] = {
         }
     }
 };
-<<<<<<< Updated upstream
-=======
+
 // astrologian
 classList["astrologian"] = {
 	regExpSearch: /^(?=.*astrologian).*$/i,
@@ -1417,7 +1416,7 @@ classList["astrologian"] = {
 	},
 	
 }
->>>>>>> Stashed changes
+
 
 /*
 ==================	CHAPTER 3: SPELLS & APPENDIX  ==================
