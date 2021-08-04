@@ -1363,6 +1363,30 @@ ClassSubList["red mage-battle rose"] = {
         }
     }
 };
+// astrologian
+classList["astrologian"] = {
+	regExpSearch: /^(?=.*astrologian).*$/i,
+	name: "Astrologian",
+	source: ["FFXIVxDnD", 37],
+	primaryAbility: "\n \u2022 Astrologian: Wisdom;",
+	prereqs: "\n \u2022 Astrologian: Wisdom 13;",
+	die: 6,
+	improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],
+	saves: ["Wis", "Cha"],
+	skills: ["\n\n" + toUni("Astrologian") + ": Choose two from Arcana, Deception, Insight, Persuasion, History, and Religion.", "\n\n" + toUni("Astrologian")],
+	toolProfs: [
+		primary: ["Divination Deck", 1],
+	],
+	weapons: [
+		[false, false, ["dagger", "dart", "sling", "quarter staff", "light crossbow"]],
+		[false, false, []]
+	],
+	equipment: "Astrologian starting equipment:\n \u2022 a dagger;\n \u2022 a Star Globe;\n \u2022 a Divination Deck;\n \u2022 A explorer's pack -or- an scholar's pack.", 
+	subclasses: ["Astrologian Archetype", []],
+	attacks: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+	abilitySave: 5,
+	spellcastingFactor: 
+}
 
 /*
 ==================	CHAPTER 3: SPELLS & APPENDIX  ==================
