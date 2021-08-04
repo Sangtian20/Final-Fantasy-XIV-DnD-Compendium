@@ -1365,7 +1365,7 @@ ClassSubList["red mage-battle rose"] = {
 };
 
 // astrologian
-classList["astrologian"] = {
+ClassList["astrologian"] = {
 	regExpSearch: /^(?=.*astrologian).*$/i,
 	name: "Astrologian",
 	source: ["FFXIVxDnD", 37],
@@ -1411,7 +1411,7 @@ classList["astrologian"] = {
 	],
 	spellcastingKnown: {
 		cantrips: [3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-		spells: list,
+		spells: "list",
 		prepared: true,
 	},
 	
