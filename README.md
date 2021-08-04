@@ -18,7 +18,7 @@ To Do List:
     * Astrologian: creation
     * Bard Archetype: College of the Skysinger: creation
     * Black Mage (provided by [u/SaintApathy](https://www.reddit.com/user/SaintApathy/posts/ "Reddit user") on reddit [post](https://www.reddit.com/r/FFXIVxDnD/comments/b2l709/shadowbringers_content_import_scripts_for_rmpmb_s/ "Reddit post")): check if it's up to date and correct
-    * Dancer: spells and validation
+    * Dancer: archetypes
     * Dark Knight: creation
     * Dragoon: creation
     * Gunbreaker: creation
