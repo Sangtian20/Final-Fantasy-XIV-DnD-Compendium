@@ -242,12 +242,48 @@ RaceList["miqote keeper of the moon"] = {
 */
 
 //Dancer
+[   //level 1
+    "bane", "bless", "cause fear", "compelled duel", "cure wounds", "detect evil and good", "expeditious retreat", "faerie fire", "fog cloud", "healing word", "heroism", "hex", "mage armor", "protection from evil and good", "shield of faith", "silent image", "tasha's caustic brew", "witch bolt",
+    //level 2
+    "barksin", "blur", "calm emotions", "charm person", "crown of madness", "dust devil", "earthbind", "enhance ability", "enlarge/reduce", "gust of wind", "hold person", "invisibility", "lesser restoration", "levitate", "magic weapon", "maximilian's earth grasp", "skywrite", "spike growth", "warding wand", "web",
+    //level 3
+    "bestow curse", "blink", "clairvoyance", "dispel magic", "elemental weapon", "fear", "fly", "gaesous form", "haste", "hypnotic pattern", "intellect fortress", "major image", "mass healing word", "melf's minute meteors", "remove curse", "revivify", "slow", "spirit shroud", "wall of sand", "wind wall",
+    //level 4
+    "arcane eye", "banishment", "compulsion", "confusion", "dominate beast", "greater invisibility", "otiluke's resilient sphere", "polymorph", "stone shape", "stoneskin", "storm sphere",
+    //level 5
+    "animate objects", "circle of power", "control winds", "dawn", "dispel evil and good", "dominate person", "far step", "greater restoration", "hold monster", "mislead", "skill empowerment", "telekinesis", "tree stride", "wall of stone"
+].forEach( function (s) {
+    if(SpellsList[s] && SpellsList[s].classes && SpellsList[s].classes.indexOf("dancer") === -1) SpellsList[s].classes.push("dancer");
+});
+dancerSpellTable = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 0 always zeros
+    [0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 1 // there are 9 entries in each array, one for each spell level
+    [2, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 2
+    [3, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 3
+    [3, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 4
+    [4, 2, 0, 0, 0, 0, 0, 0, 0], //lvl 5
+    [4, 2, 0, 0, 0, 0, 0, 0, 0], //lvl 6
+    [4, 3, 0, 0, 0, 0, 0, 0, 0], //lvl 7
+    [4, 3, 2, 0, 0, 0, 0, 0, 0], //lvl 8
+    [4, 3, 2, 0, 0, 0, 0, 0, 0], //lvl 9
+    [4, 3, 3, 0, 0, 0, 0, 0, 0], //lvl 10
+    [4, 3, 3, 0, 0, 0, 0, 0, 0], //lvl 11
+    [4, 3, 3, 0, 0, 0, 0, 0, 0], //lvl 12
+    [4, 3, 3, 1, 0, 0, 0, 0, 0], //lvl 13
+    [4, 3, 3, 1, 0, 0, 0, 0, 0], //lvl 14
+    [4, 3, 3, 2, 0, 0, 0, 0, 0], //lvl 15
+    [4, 3, 3, 2, 0, 0, 0, 0, 0], //lvl 16
+    [4, 3, 3, 3, 1, 0, 0, 0, 0], //lvl 17
+    [4, 3, 3, 3, 1, 0, 0, 0, 0], //lvl 18
+    [4, 3, 3, 3, 2, 0, 0, 0, 0], //lvl 19
+    [4, 3, 3, 3, 2, 0, 0, 0, 0]  //lvl 20
+]
 ClassList["dancer"] = {
 	regExpSearch: /^(?=.*dancer).*$/i,
 	name: "Dancer",
-	source: ["HB", 55],
+	source: ["FFXIVxDnD", 55],
 	primaryAbility: "\n \u2022 Dancer: Dexterity;",
-	prereqs: "\n \u2022 MyClass: Dexterity 13;",
+	prereqs: "\n \u2022 Dancer: Dexterity 13;",
 	die: 8,
 	improvements: [0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,5,5],
 	saves: ["Dex", "Cha"],
@@ -261,11 +297,14 @@ ClassList["dancer"] = {
 		[false, false, []]
 	],
 	equipment: "Dancer starting equipment:\n \u2022(a) two daggers or (b) two chakrams\n \u2022a (a) whip or (b) scimitar\n \u2022a set of bracelets and anklets for spell casting\n \u2022a set of clothes\n \u2022a (a) costume or (b) light armour\n \u2022(a) an explorer's pack or (b) a entertainer's pack",
-	subclasses: ["Dancer Archetyoe", []],
+	subclasses: ["Dancer Archetype", [/*"dacer-paragon", "dancer-exotic wonder", "dancer-peace bringer"*/]],
 	attacks: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 	abilitySave: 6,
 	spellcastingFactor: 2,
-	//spells missing
+    spellcastingKnown: {
+        spells: "list",
+        prepared: true
+    },
 	features: {
 		"unarmored defense": {
 			name: "Unarmored Defense",
@@ -347,43 +386,7 @@ ClassList["dancer"] = {
 			description: desc(["When you roll initiative you gain 2 Dazzling Dance charges."])
 		}
 	}
-};/*
-AddSubClass("dancer", "paragon", {
-	regExpSearch: /^(?=.*paragon).*$/i,
-	subname: "Paragon",
-	fullname: "Paragon",
-	source: ["FFXIVxDnD", 58],
-	abilitySave: 6,
-	features: {
-		"inspring salsa": {
-			name: "Inspring Salsa",
-			source: ["FFXIVxDnD", 59],
-			minlevel: 3,
-			description: desc(["As a bonus action you can spend up to 2 Dazzling Dance charges to inspire an ally within 5ft. of you. Your ally may add a bonus to any attack roll, saving throw or ability check they make equal to twice the number of charges used to inspire them one time. At 10th level you may spend any number of Dazzling Dance charges in the sameway."]),
-			action: ["bonus action", ""]
-		},
-		"magic of movement": {
-			name: "Magic of Movement",
-			source: ["FFXIVxDnD", 59],
-			minlevel: 6,
-			description: desc(["When you cast a spell, you may spend a number of Dazzling Dance charges equal to the spell level instead of spending a spell slot. Spells cast using this feature do not generate Dazzling Dance charges."])
-		},
-		"improvised flow": {
-			named: "Improvised Flow",
-			source: ["FFXIVxDnD", 59],
-			minlevel: 11,
-			description: desc(["When you make a concentration check you may spend a Dazzling Dance charge to roll with advantage"])
-		},
-		"forte fusion": {
-			name: "Forte Fusion",
-			source: ["FFXIVxDnD", 59],
-			minlevel: 15,
-			description: desc(["You have learned how to mix known dances into new exciting combinations. You are able to cast a second spell which requires concentration without ending the first. To do so you use your action to spend 1 Dazzling Dance charge to cast the second spell alongside the required spell slot. Each turn you concentrate on the second spell, you must use your action to spend once Dazzling Dance charge and spend 10ft. of movement per spell."]),
-			action: ["action", ""]
-		}
-	}
-}
-);*/
+};
 
 //Black Mage by u/SaintApathy (must check if it's up to date)
 [   // cantrips
