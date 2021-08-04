@@ -297,7 +297,7 @@ ClassList["dancer"] = {
 		[false, false, []]
 	],
 	equipment: "Dancer starting equipment:\n \u2022(a) two daggers or (b) two chakrams\n \u2022a (a) whip or (b) scimitar\n \u2022a set of bracelets and anklets for spell casting\n \u2022a set of clothes\n \u2022a (a) costume or (b) light armour\n \u2022(a) an explorer's pack or (b) a entertainer's pack",
-	subclasses: ["Dancer Archetype", [/*"dacer-paragon", "dancer-exotic wonder", "dancer-peace bringer"*/]],
+	subclasses: ["Dancer Archetype", ["dacer-paragon", "dancer-exotic wonder", "dancer-peace bringer"]],
 	attacks: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 	abilitySave: 6,
 	spellcastingFactor: 2,
@@ -387,7 +387,15 @@ ClassList["dancer"] = {
 		}
 	}
 };
+ClassSubList["dancer-paragon"] = {
 
+};
+ClassSubList["dancer-exotic wonder"] = {
+
+};
+ClassSubList["dancer-peace bringer"] = {
+
+};
 //Black Mage by u/SaintApathy (must check if it's up to date)
 [   // cantrips
     "blade ward", "chill touch", "fire bolt", "frostbite", "infestation", "mage hand", "magic stone", "produce flame", "ray of frost", "shocking grasp", "thaumaturgy", "toll the dead",
