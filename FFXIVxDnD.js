@@ -1473,14 +1473,14 @@ ClassList["astrologian"] = {
 			name: "The Ewer",
 			source: ["FFXIVxDnD", 39],
 			minlevel: 1,
-			description: desc("When rolling a 5 while using draw I draw The Ewer card, which provides the effects target a level 1 or 2 spell slot temporarily")
+			description: desc("When rolling a 5 while using draw I draw The Ewer card, which provides the effects target a level 1 or 2 spell slot temporarily"),
 			additional: ["1 temporal spell slot provided", "1 temporal spell slot provided", "1 temporal spell slot provided", "1 temporal spell slot provided", "2 temporal spell slot provided", "2 temporal spell slot provided", "2 temporal spell slot provided", "2 temporal spell slot provided", "2 temporal spell slot provided", "2 temporal spell slot provided", "3 temporal spell slot provided", "3 temporal spell slot provided", "3 temporal spell slot provided", "3 temporal spell slot provided", "3 temporal spell slot provided", "3 temporal spell slot provided", "4 temporal spell slot provided", "4 temporal spell slot provided", "4 temporal spell slot provided", "4 temporal spell slot provided"]
 		},
 		"the spire": {
 			name: "The Spire",
 			source: ["FFXIVxDnD", 39],
 			minlevel: 1,
-			description: desc("When rolling a 6 while using draw I draw The Spire card, which provides the effects target 1 non-spell slot resource")
+			description: desc("When rolling a 6 while using draw I draw The Spire card, which provides the effects target 1 non-spell slot resource"),
 			additional: ["1 non-spell slot resource provided", "1 non-spell slot resource provided", "1 non-spell slot resource provided", "1 non-spell slot resource provided", "2 non-spell slot resource provided", "2 non-spell slot resource provided", "2 non-spell slot resource provided", "2 non-spell slot resource provided", "2 non-spell slot resource provided", "2 non-spell slot resource provided", "3 non-spell slot resource provided", "3 non-spell slot resource provided", "3 non-spell slot resource provided", "3 non-spell slot resource provided", "3 non-spell slot resource provided", "3 non-spell slot resource provided", "4 non-spell slot resource provided", "4 non-spell slot resource provided", "4 non-spell slot resource provided", "4 non-spell slot resource provided"]
 		}
 	}
