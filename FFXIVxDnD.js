@@ -1440,6 +1440,35 @@ ClassList["astrologian"] = {
 			usages: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
 			recovery: "long rest"
 		},
+		"the balance": {
+			name: "The Balance",
+			source: ["FFXIVxDnD", 39],
+			minlevel: 1,
+			description: desc([
+				"When rolling a 1 while using draw I draw The Balance card, which applies a damage bonus to the effects target",
+				"This bonus applies once per action, attack damage roll, bonus action and reaction"
+			]),
+			additional: ["1d6 bonus damage", "1d6 bonus damage", "1d6 bonus damage", "1d6 bonus damage", "2d6 bonus damage", "2d6 bonus damage", "2d6 bonus damage", "2d6 bonus damage", "2d6 bonus damage", "2d6 bonus damage", "3d6 bonus damage", "3d6 bonus damage", "3d6 bonus damage", "3d6 bonus damage", "3d6 bonus damage", "3d6 bonus damage", "4d6 bonus damage", "4d6 bonus damage", "4d6 bonus damage", "4d6 bonus damage"]
+		},
+		"the bole": {
+			name: "The Bole",
+			source: ["FFXIVxDnD", 39],
+			minlevel: 1,
+			description: desc("When rolling a 2 while using draw I draw The Bole card, which applies a reduction to damage taken by the effects target"),
+			additional: ["damage reduced by 1d6", "damage reduced by 1d6", "damage reduced by 1d6", "damage reduced by 1d6", "damage reduced by 2d6", "damage reduced by 2d6", "damage reduced by 2d6", "damage reduced by 2d6", "damage reduced by 2d6", "damage reduced by 2d6", "damage reduced by 3d6", "damage reduced by 3d6", "damage reduced by 3d6", "damage reduced by 3d6", "damage reduced by 3d6", "damage reduced by 3d6", "damage reduced by 4d6", "damage reduced by 4d6", "damage reduced by 4d6", "damage reduced by 4d6"]
+		},
+		"the arrow": {
+			name: "The Arrow",
+			source: ["FFXIVxDnD", 39],
+			minlevel: 1,
+			description: desc("When rolling a 3 while using draw I draw The Arrow card, which grants the effects target an extra attack when using the attack action")
+		},
+		"the spear": {
+			name: "The Spear",
+			source: ["FFXIVxDnD", 39],
+			minlevel: 1,
+			description: desc("When rolling a 4 while using draw I draw The Spear card, which makes the effects target crit upon rollin 19 or 20 on an attack roll")
+		},
 		
 	}
 }
