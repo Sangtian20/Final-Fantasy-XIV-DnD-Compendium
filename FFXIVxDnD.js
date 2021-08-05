@@ -1375,9 +1375,9 @@ ClassList["astrologian"] = {
 	improvements : [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5],
 	saves: ["Wis", "Cha"],
 	skills: ["\n\n" + toUni("Astrologian") + ": Choose two from Arcana, Deception, Insight, Persuasion, History, and Religion.", "\n\n" + toUni("Astrologian")],
-	toolProfs: [
-		primary: ["Divination Deck", 1],
-	],
+	toolProfs: {
+		primary: ["Divination Deck", 1]
+	},
 	weapons: [
 		[false, false, ["dagger", "dart", "sling", "quarter staff", "light crossbow"]],
 		[false, false, []]
@@ -1407,14 +1407,41 @@ ClassList["astrologian"] = {
 		[4, 3, 3, 2, 3, 1, 1, 1, 1],//lvl17
 		[4, 3, 3, 3, 3, 1, 1, 1, 1],//lvl18
 		[4, 3, 3, 3, 3, 2, 1, 1, 1],//lvl19
-		[4, 3, 3, 3, 3, 2, 2, 1, 1]//20
+		[4, 3, 3, 3, 3, 2, 2, 1, 1]//lvl20
 	],
 	spellcastingKnown: {
 		cantrips: [3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
 		spells: "list",
 		prepared: true,
 	},
-	
+	features: {
+		"spellcasting": {
+			name: "Spellcasting",
+            source: ["FFXIVxDnD", 39],
+            minlevel: 1,
+            description: desc([
+                "I can cast prepared astrologian cantrips/spells, using Wisdom as my spellcasting ability",
+                "I can use a star globe, planisphere or other similar tools as an arcane focus",
+                "I can cast my known astrologian spells as rituals if they have the ritual tag"
+            ]),
+            additional: ["3 cantrips known", "3 cantrips known", "3 cantrips known", "4 cantrips known", "4 cantrips known", "4 cantrips known", "4 cantrips known", "4 cantrips known", "4 cantrips 	known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known", "5 cantrips known"]
+		},
+		"draw": {
+			name: "Draw",
+			source: ["FFXIVxDnD", 39],
+			minlevel: 1,
+			description: desc([
+				"I'm able to draw a card from my deck of sixty and empower an ally according to the drawn card",
+				"I roll 1d6, which determines the card drawn, and empower an ally within 30ft. that I can see, the card then returns to my deck",
+				"It's effect lasts for my Wis modifier rounds(minimum 1), a creature may only have one draw effect active at a time",
+				"The available draws are determined by my level and get restore after a long rest"
+			]),
+			additional: ["2 available draws", "3 available draws", "4 available draws", "5 available draws", "6 available draws", "7 available draws", "8 available draws", "9 available draws", "10 available draws", "11 available draws", "12 available draws", "13 available draws", "14 available draws", "15 available draws", "16 available draws", "17 available draws", "18 available draws", "19 available draws", "20 available draws", "21 available draws"],
+			usages: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+			recovery: "long rest"
+		},
+		
+	}
 }
 
 
